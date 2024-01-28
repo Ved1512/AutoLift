@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fat Loss</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/MG.css">
+</head>
+
+<body>
+    <!-- MENU BAR -->
+    <nav class="navbar navbar-expand-lg fixed-top ">
+        <div class="container">
+
+            <a class="navbar-brand" href="index.html">AutoLift</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-lg-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link smoothScroll">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link smoothScroll">About Us</a>
+                    </li>
+
+                 
+
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link smoothScroll">Contact</a>
+                    </li>
+                </ul>
+
+                <ul class="social-icon ml-lg-3">
+                    <li><a href="https://fb.com/tooplate" class="fa fa-facebook"></a></li>
+                    <li><a href="#" class="fa fa-twitter"></a></li>
+                    <li><a href="#" class="fa fa-instagram"></a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="Heading">
+        <h1 id = "MainHead">Fat Losing 🫃</h1>
+        <p>
+        Fat loss is a dynamic process aimed at reducing body fat through a combination of targeted exercise, mindful nutrition, and overall lifestyle adjustments. The key principle revolves around creating a caloric deficit, where the body expends more energy than it takes in, prompting it to utilize stored fat for fuel. Regular physical activity, including cardiovascular exercises, strength training, and high-intensity interval training, contributes not only to calorie burning but also to metabolic enhancement. Nutrition plays a pivotal role in fat loss, emphasizing a balanced and nutrient-dense diet that supports the body's energy needs while promoting the breakdown of fat stores. Prioritizing whole foods, lean proteins, and adequate hydration is essential for achieving sustainable results. Successful fat loss goes beyond mere weight reduction; it involves adopting long-term, healthy habits that contribute to overall well-being and body composition improvements.
+
+
+
+
+        </p>
+        <a href="#maincon">
+            <button class="btn btn-primary" id = "GoBtn" type="submit">Lets Go!</button>
+        
+    </a>
+    </div>
+    
+
+
+    <div class="maincon" id = "maincon">
+        <style>
+          #HeadForSearch{
+              color:#f13a11;
+             
+          }
+          li:hover{
+              cursor:pointer;
+          }
+        </style>
+          <div class="searchbar">
+              <h5 id = "HeadForSearch"> Click on the available equipments</h5>
+             
+              <div class="row">
+                  <div class="col">
+                      <input class="searchbox" type="text" class="form-control" placeholder="Search Available items" aria-label="First name">
+                      <button>search</button>
+                      
+                  </div>
+              </div>
+             
+              <ul id="items">
+                  <li onclick="moveItem(this)">Ab Roller</li>
+                  <li onclick="moveItem(this)">Push-up Handles</li>
+                  <li onclick="moveItem(this)">Pull-up Bar</li>
+                  <li onclick="moveItem(this)">TRX SuspensTrainer</li>
+                  <li onclick="moveItem(this)">Kettlebell</li>
+                  <li onclick="moveItem(this)">Barbell</li>
+                  <li onclick="moveItem(this)">Exercisll</li>
+                  <li onclick="moveItem(this)">Cable Machine</li>
+                  <li onclick="moveItem(this)">Smith Machine</li>
+                  <li onclick="moveItem(this)">Stair Climber</li>
+                  <li onclick="moveItem(this)"></li>
+                  
+              
+              
+              
+              
+              
+              
+              
+                  <!-- Add more items as needed -->
+                </ul>
+              </div>
+              
+              <div class="selecteditems" id="selectedList">
+                  <h5 id = "HeadForSearch"> Selected equipments</h5>
+                  
+                  <ul id="selecteditems">
+                      <!-- Selected items will be added here -->
+                      
+                  </ul>
+                  
+              </div>
+                </div>
+      </div>
+      <script>
+          function moveItem(item) {
+      var selectedItem = item.textContent; // Get the text content of the clicked item
+      var selectedList = document.getElementById("selecteditems");
+      
+      // Remove the item from the main list
+      item.parentNode.removeChild(item);
+      
+      // Create a new list item for the selected list
+      var li = document.createElement("li");
+      li.textContent = selectedItem;
+      
+      // Append the new item to the selected list
+      selectedList.appendChild(li);
+    }
+    
+            </script>
+            <button class="btn btn-primary" id = "GoBtn2" type="submit">Proceed</button>
+            <br><br>
+      
+      <br><br><br>
+      <br><br>
+      <div class="WorkOutSchedMain">
+      <h2 class="headindschedule">Workout Schedules</h2>
+      <div class="schedulecon">
+          <br>
+          <h3>Monday</h3>
+          <p>
+            <h4>Day 1: Full-Body HIIT</h4>
+
+            Jumping Jacks: 5 minutes                <br>
+            Bodyweight Squats: 4 sets x 20 reps     <br>
+            Push-ups: 4 sets x 15 reps<br>
+            Mountain Climbers: 3 sets x 30 seconds<br>
+            Burpees: 3 sets x 15 reps<br>
+            Plank: 3 sets x 45 seconds<br>
+            
+            
+        
+          <h3>Tuesday</h3>
+          <p><h4>Day 2: Cardio 30-45 minutes of moderate-intensity cardio (running, cycling, swimming, or your preferred activity)</h4></p>
+          <h3>Wednesday</h3>
+          <p><h4>Day 3: Rest or Light Activity</h4></p>
+          <h3>Thursday</h3>
+          <p><h4>Day 4: Repeat Full-Body HIIT</h4></p>
+          <h3>Friday</h3>
+          <p><h4>Day 5: Cardio</h4></p>
+          <h3>Saturday</h3>
+          <p><h4>Day 6: Rest or Light Activity</h4></p>
+      </div>
+  </div>
+  <div class="modal fade" id="membershipForm" tabindex="-1" role="dialog" aria-labelledby="membershipFormLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+  
+      <div class="modal-content">
+          <div class="modal-header">
+  
+              <h2 class="modal-title" id="membershipFormLabel">Membership Form</h2>
+  
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+
+
+        <!-- SCRIPTS -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/aos.js"></script>
+        <script src="js/smoothscroll.js"></script>
+        <script src="js/custom.js"></script>
+</body>
+
+</html>

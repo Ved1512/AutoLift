@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Muscle Gain</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/MG.css">
+</head>
+
+<body>
+    <!-- MENU BAR -->
+    <nav class="navbar navbar-expand-lg fixed-top ">
+        <div class="container">
+
+            <a class="navbar-brand" href="index.html">AutoLift</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-lg-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link smoothScroll">Home</a>
+                    </li>
+
+
+
+
+
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link smoothScroll">About Us</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link smoothScroll">Contact</a>
+                    </li>
+                </ul>
+
+                <ul class="social-icon ml-lg-3">
+                    <li><a href="https://fb.com/tooplate" class="fa fa-facebook"></a></li>
+                    <li><a href="#" class="fa fa-twitter"></a></li>
+                    <li><a href="#" class="fa fa-instagram"></a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="Heading">
+        <h1 id="MainHead">Muscle Gain 💪</h1>
+        <p>Muscle gain, also known as muscle hypertrophy, is the process of increasing the size and strength of skeletal
+            muscles through resistance training and proper nutrition. Engaging in regular and challenging workouts, such
+            as weightlifting or bodyweight exercises, stimulates muscle fibers to undergo microscopic damage, initiating
+            a repair and growth response. This adaptive process involves the synthesis of new proteins and the fusion of
+            muscle fibers, resulting in increased muscle mass over time. Adequate protein intake is crucial for muscle
+            gain, as proteins provide the essential building blocks (amino acids) required for muscle tissue repair and
+            growth. Additionally, sufficient rest and recovery are integral parts of the muscle-building equation,
+            allowing the body to recuperate and optimize the muscle-building process. Whether for athletic performance,
+            aesthetic goals, or overall health, a well-rounded approach that combines progressive resistance training,
+            proper nutrition, and ample recovery is key to achieving successful muscle gain.
+
+
+
+
+
+        </p>
+        <a href="#maincon">
+            <button class="btn btn-primary" id="GoBtn" type="submit">Lets Go!</button>
+            <!-- <button id = "GoBtn" >
+            Lets Go!
+        </button> -->
+        </a>
+    </div>
+
+
+
+    <!-- This is where it begins  -->
+    <div class="maincon" id="maincon">
+        <style>
+            #HeadForSearch {
+                color: #f13a11;
+                /* position: absolt; */
+            }
+
+            li:hover {
+                cursor: pointer;
+            }
+        </style>
+        <div class="searchbar">
+            <h5 id="HeadForSearch"> Click on the available equipments</h5>
+            <!-- <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form> -->
+            <div class="row">
+                <div class="col">
+                    <input class="searchbox" type="text" class="form-control" placeholder="Search Available items"
+                        aria-label="First name">
+                    <button>search</button>
+
+                </div>
+            </div>
+
+            <ul id="items">
+                <!-- Add more items as needed -->
+            </ul>
+        </div>
+
+        <div class="selecteditems" id="selectedList">
+            <h5 id="HeadForSearch"> Selected equipments</h5>
+            <ul id="selecteditems">
+                <!-- Selected items will be added here -->
+            </ul>
+
+        </div>
+    </div>
+    </div>
+    <script>
+
+        var exercises = [
+            "Ab Roller",
+            "Push-up Handles",
+            "Pull-up Bar",
+            "TRX SuspensTrainer",
+            "Kettlebell",
+            "Barbell",
+            "Exercisll",
+            "Cable Machine",
+            "Smith Machine",
+            "Stair Climber"
+        ];
+
+        // Assuming the 'exercises' array is defined in exercises.js
+
+        // Create a temporary div element
+        var tempDiv = document.createElement('div');
+
+        // Initialize an empty string to hold the HTML content
+        var htmlContent = '';
+
+        // Loop through the 'exercises' array
+        exercises.forEach(function (exercise) {
+            // Append each exercise as an <li> element to the HTML content
+            htmlContent = '<li onclick="moveItem(this)">' + exercise + '</li>';
+            tempDiv.innerHTML = htmlContent;
+            console.log(htmlContent);
+
+            // Get the <ul> element where you want to append the <li> elements
+            var ulElement = document.getElementById('items');
+
+            // Append the <li> elements to the <ul> element
+            ulElement.appendChild(tempDiv.firstChild);
+        });
+
+        // Set the HTML content of the temporary div
+
+    </script>
+    <script>
+        function moveItem(item) {
+            var selectedItem = item.textContent; // Get the text content of the clicked item
+            var selectedList = document.getElementById("selecteditems");
+
+            // Remove the item from the main list
+            item.parentNode.removeChild(item);
+
+            // Create a new list item for the selected list
+            var li = document.createElement("li");
+            li.textContent = selectedItem;
+
+            // Append the new item to the selected list
+            selectedList.appendChild(li);
+
+        }
+
+    </script>
+    <a href="#FinalCon">
+    <button class="btn btn-primary" id="GoBtn2" type="submit">Proceed</button>
+</a>
+    <br><br>
+
+    <br><br><br>
+    <br><br>
+    <div class="WorkOutSchedMain" id = "FinalCon">
+        <h2 class="headindschedule">Workout Schedules</h2>
+        <div class="schedulecon" >
+            <br>
+            <h3>Monday</h3>
+            <p><h4>Day 1: Upper Body</h4>
+    
+                Bench Press: 4 sets x 8-10 reps               <br>
+                Bent-over Rows: 3 sets x 10 reps<br>
+                Overhead Press: 3 sets x 12 reps<br>
+                Pull-ups or Lat Pulldowns: 3 sets x 10 reps<br>
+                Bicep Curls: 3 sets x 12 reps<br>
+                Tricep Dips: 3 sets x 12 reps</p>
+            <h3>Tuesday</h3>
+            <p><h4>Day 2: Lower Body</h4>  
+    
+                Squats: 4 sets x 8-10 reps          <br>
+                Deadlifts: 3 sets x 10 reps<br>
+                Leg Press: 3 sets x 12 reps<br>
+                Lunges: 3 sets x 10 reps per leg<br>
+                Leg Curls: 3 sets x 12 reps<br>
+                Calf Raises: 4 sets x 15 reps</p>
+            <h3>Wednesday</h3>
+            <p><h4>Day 3: Rest or Light Cardio</h4></p>
+            <h3>Thursday</h3>
+            <p><h4>Day 4: Repeat Upper Body Workout</h4></p>
+            <h3>Friday</h3>
+            <p><h4>Day 5: Repeat Lower Body Workout</h4></p>
+            <h3>Saturday</h3>
+            <p><h4>Day 6: Rest or Light Cardio</h4></p>
+        </div>
+    </div>
+    <div class="modal fade" id="membershipForm" tabindex="-1" role="dialog" aria-labelledby="membershipFormLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <h2 class="modal-title" id="membershipFormLabel">Membership Form</h2>
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <form class="membership-form webform" role="form">
+                        <input type="text" class="form-control" name="cf-name" placeholder="John Doe">
+
+                        <input type="email" class="form-control" name="cf-email" placeholder="Johndoe@gmail.com">
+
+                        <input type="tel" class="form-control" name="cf-phone" placeholder="123-456-7890"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+
+                        <textarea class="form-control" rows="3" name="cf-message"
+                            placeholder="Additional Message"></textarea>
+
+                        <button type="submit" class="form-control" id="submit-button" name="submit">Submit
+                            Button</button>
+
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="signup-agree">
+                            <label class="custom-control-label text-small text-muted" for="signup-agree">I agree to the
+                                <a href="#">Terms &amp;Conditions</a>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="modal-footer"></div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- SCRIPTS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+.searchbar{
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    padding: 0 20px 0 20px;
+    /* border: 2px solid red; */
+    /* background-color: #dcdcdc; */
+    width: 40%;
+    margin-right: 5px;
+    border: 2px dashed #f13a11;
+    
+    border-radius: 15px;
+    height: 400px;
+}
+.maincon{
+    display: flex;
+    flex-direction: row;
+    /* margin: 100px; */
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+    
+}
+.selecteditems{
+    /* background-color: #dcdcdc; */
+    border: 2px dashed #f13a11;
+    width: 40%;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow: 3px black;
+    margin-left: 15px;
+    height: 400px;
+    
+}
+
+.searchbox{
+    display: inline;
+    
+}
+.Heading{
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding:0 10vw;
+    text-align: center;
+
+}
+#GoBtn{
+    background: #f13a11;
+    border:none;
+    width:10vw;
+    height:7vh;
+}
+
+.schedulecon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 120vh;
+    background-color: #dcdcdc;
+    text-align: center;
+}
+.headindschedule{
+    text-align: center;
+}
+#WorkOutSchedMain{
+    
+
+    height:100vh;
+    width:100vw;
+}
+li{
+    text-decoration: none;
+    list-style: none;
+    
+}
+#GoBtn2{
+    background: #f13a11;
+    border:none;
+    width:10vw;
+    height:7vh;
+    position: absolute;
+    left: 45vw;
+}
